@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script>
+      // // let : 지역변수
+      // let score = 80;
+      // if (score >= 60) {
+      //   console.log("합격");
+      // }
+
+      // let score2 = 50;
+      // if (score2 >= 60) {
+      //   console.log("합격");
+      // } else {
+      //   console.log("불합격");
+      // }
+
+      // let msg;
+      // if (score2 >= 60) {
+      //   msg = "합격";
+      // } else {
+      //   msg = "불합격";
+      // }
+      // console.log(msg);
+
+      // // [ ! 코테 문제 풀때 주의 할 것 ]
+      // // else 보단 else if 를 사용하기
+      // let score = 79;
+      // let msg;
+      // if (score >= 80 && score <= 100) {
+      //   msg = "우수";
+      // } else if (score >= 60 && score < 80) {
+      //   msg = "보통";
+      // } else if (score >= 0 && score < 60) {
+      //   msg = "저조";
+      // } else {
+      //   msg = "잘못된 점수";
+      // }
+      // console.log(msg);
+
+      // 윤년 판별
+      // 1. 4의 배수이고, 100의 배수가 아닌 경우
+      // 2. 400의 배수인 경우
+      //  -> 윤년
+
+      let year = 2024;
+      let msg = "윤년아님";
+
+      // ver1.
+      if (year % 100 != 0 && year % 4 == 0) {
+        msg = "윤년";
+      } else if (year % 400 == 0) {
+        msg = "윤년";
+      }
+
+      // ver2.
+      if(year%400==0||year % 100!=0 && year%4==0 )
+      {
+        msg='윤년'
+      }
+      console.log(msg);
+    
+    </script>
+  </head>
+  <body></body>
+</html>

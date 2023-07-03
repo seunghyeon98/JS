@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // let outer = function(){
+      //     let data =0;
+      //     data +=1;
+      //     console.log(data);
+
+      // }
+
+      // outer()
+      // outer()
+
+      //  *closer*
+      let outer = function () {
+        let data = 0;
+
+        // 함수가 함수를 리턴
+        return function () {
+          data += 1;
+          console.log(data);
+        };
+      };
+      // outer 함수를 호출하고 그 결과를 inner에 저장
+      // outer 함수가 리턴하는 함수를 inner에 저장
+      let inner = outer();
+      inner();
+      inner();
+
+      //    익명함수
+      const arrow = () => {
+        alert("이름없는 화살표 함수");
+      };
+
+      arrow();
+    </script>
+  </body>
+</html>

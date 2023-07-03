@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // confirm message
+      let r = confirm("식사는 하셧나요?");
+      //   if(!r) = Flase 일시
+      if (r) {
+        document.write("무엇을 드셧나요?");
+      } else {
+        document.write("아무거라도 드세요");
+      }
+
+      let redvelvet = "name=아이린";
+      let encoding = encodeURI(redvelvet);
+      alert(encoding);
+      alert(decodeURI(encoding));
+    </script>
+  </body>
+</html>
